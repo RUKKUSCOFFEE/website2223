@@ -1,0 +1,250 @@
+body, html, main {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+@media (min-width: 280px) and (max-width: 639px) {
+  body, html, main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+.top_wrapper {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  /*
+      img{
+          background-color: #d1a83e66;
+          backdrop-filter: blur(6px) saturate(125%);
+          height: 100vh;
+          width: auto;
+          position: relative;
+          top: -100vh;
+      }
+  */
+}
+.top_wrapper .pivot_container {
+  z-index: 2;
+  position: absolute;
+}
+.top_wrapper video {
+  height: 100vh;
+}
+.top_wrapper img.large0 {
+  position: absolute;
+  top: 0;
+}
+.top_wrapper .coverOverlay {
+  width: 100%;
+  height: 100vh;
+  background: url("./components/data/cover.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 280px) and (max-width: 639px) {
+  .top_wrapper .coverOverlay {
+    background-size: 250%;
+    background-position: center;
+  }
+}
+
+.variants_wrapper {
+  height: 100vh;
+  width: auto;
+}
+.variants_wrapper .variants {
+  width: 100%;
+  height: 100vh;
+  background: url("./components/data/variants.png");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 280px) and (max-width: 639px) {
+  .variants_wrapper .variants {
+    background-size: 300%;
+    background-position: 72.5%;
+  }
+}
+
+.about_wrapper {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("./components/data/about.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.about_wrapper .text {
+  margin: auto;
+  padding: 20px 30px;
+  border: solid 12px #d1a83e;
+  background-color: #faeafa;
+  border-radius: 16px;
+  transform: translate(0, 50%);
+}
+.about_wrapper .text h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 2em;
+}
+.about_wrapper .text p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.25em;
+}
+@media (min-width: 280px) and (max-width: 639px) {
+  .about_wrapper .text {
+    transform: translate(0, 25%);
+    padding: 20px 20px;
+    border: solid 4px #d1a83e;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .about_wrapper .text {
+    transform: translate(0, 25%);
+  }
+}
+
+.process_wrapper {
+  background: #433123;
+  color: #fafafa;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.process_wrapper .column {
+  padding: 5vh 20px;
+}
+.process_wrapper .column .halfwrapper {
+  width: 48%;
+}
+.process_wrapper .column .halfwrapper .text {
+  border: 3px solid #faccfa;
+  border-radius: 12px;
+  padding: 16px 32px;
+}
+.process_wrapper .column .halfwrapper .text h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 2em;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+@media (min-width: 280px) and (max-width: 639px) {
+  .process_wrapper .column .halfwrapper .text h1 {
+    margin-left: 0;
+  }
+}
+.process_wrapper .column .halfwrapper .text p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.25em;
+}
+.process_wrapper .column .halfwrapper .text .disc {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  background: #d1a329;
+  color: #010101;
+  font-size: 18px;
+}
+@media (min-width: 280px) and (max-width: 639px) {
+  .process_wrapper .column .halfwrapper {
+    width: 100%;
+  }
+}
+.process_wrapper .column .offsethalfwrapper {
+  display: block;
+  width: 48%;
+  margin-left: auto;
+}
+.process_wrapper .column .offsethalfwrapper .text {
+  border: 3px solid #faccfa;
+  border-radius: 12px;
+  padding: 16px 32px;
+}
+.process_wrapper .column .offsethalfwrapper .text h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 2em;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+@media (min-width: 280px) and (max-width: 639px) {
+  .process_wrapper .column .offsethalfwrapper .text h1 {
+    margin-left: 0;
+  }
+}
+.process_wrapper .column .offsethalfwrapper .text p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.25em;
+}
+.process_wrapper .column .offsethalfwrapper .text .disc {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  background: #d1a329;
+  color: #010101;
+  font-size: 18px;
+}
+@media (min-width: 280px) and (max-width: 639px) {
+  .process_wrapper .column .offsethalfwrapper {
+    width: 100%;
+  }
+}
+
+.benefits_wrapper {
+  background-color: #d1a329;
+}
+.benefits_wrapper .column .boxv2 {
+  border-radius: 12px;
+  vertical-align: middle;
+}
+.benefits_wrapper .column .boxv2 .tooltip_container {
+  height: 36px;
+}
+.benefits_wrapper .column .boxv2 .tooltip_container .tooltip_info {
+  width: 320px;
+}
+.benefits_wrapper .column .boxv2 .tooltip_container button {
+  width: 240px;
+}
+.benefits_wrapper .column .boxv2 .heading {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+.benefits_wrapper .column .boxv2 .info {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+.footer_wrapper {
+  background-color: #433123;
+  padding: 2vh 20px;
+}
+.footer_wrapper .column .heading {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  color: #d3b568;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.footer_wrapper .column .footerLink {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  color: #fafafa;
+  font-weight: 400;
+}
+.footer_wrapper .column .footerLink i {
+  position: relative;
+  top: 3px;
+}/*# sourceMappingURL=App.css.map */
